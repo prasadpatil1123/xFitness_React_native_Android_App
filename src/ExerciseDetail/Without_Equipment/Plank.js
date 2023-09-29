@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Button } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import FastImage from 'react-native-fast-image';
 
@@ -28,13 +28,13 @@ const Plank = () => {
       <View style={styles.Pageheading}>
         <Text
           style={styles.PageheadingText}>
-         Plank (30 seconds)
+          Plank: 30 seconds
         </Text>
       </View>
       <View style={styles.GIFBOX}>
         <FastImage
           source={{
-            uri: 'https://media.tenor.com/7RrdzMurW8IAAAAC/pushups.gif',
+            uri: 'https://i.pinimg.com/originals/cf/b5/67/cfb5677a755fe7288b608a4fec6f09a0.gif',
             priority: FastImage.priority.normal,
           }}
           style={{ width: 350, height: 200 }}
@@ -50,7 +50,10 @@ const Plank = () => {
               <View
                 style={styles.USEBOX}>
                 <Text style={styles.USEBOXTXT}>
-                  Quick and effective exercise to strengthen the upper body, including the chest, shoulders, and triceps, while improving overall core stability.
+                  {'\u2022'}Balance and Stability{'\n'}
+                  {'\u2022'}Full Body Workout{'\n'}
+                  {'\u2022'}Enhanced Metabolism{'\n'}
+                  {'\u2022'}No Equipment Needed{'\n'}
                 </Text>
                 <Button title='Close' onPress={() => setShow(false)} />
               </View>
@@ -64,8 +67,7 @@ const Plank = () => {
 
         <Text style={styles.DESBOXTXT}>
           {'\u2022'} Start in a push-up position with your forearms on the ground.{'\n'}
-          {'\u2022'} Keep your body in a straight line from head to heels, engaging your 
-core.
+          {'\u2022'} Keep your body in a straight line from head to heels, engaging your core.
         </Text>
 
       </View>
@@ -77,7 +79,7 @@ core.
           onPress={toggleTimer}
         />
       </View>
-      <Button title='Uses' onPress={() => setShow(true)} />
+      <Button title='Benefits' onPress={() => setShow(true)} />
     </View>
   )
 }

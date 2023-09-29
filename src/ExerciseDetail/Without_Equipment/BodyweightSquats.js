@@ -50,7 +50,10 @@ const BodyweightSquats = () => {
             <View
               style={styles.USEBOX}>
               <Text style={styles.USEBOXTXT}>
-              Bodyweight squats build leg strength and improve functional fitness with minimal equipment or space requirements.
+              {'\u2022'}Functional Strength{'\n'}
+              {'\u2022'}Core Engagement{'\n'}
+              {'\u2022'}Calorie Burn{'\n'}
+              {'\u2022'}No Equipment Needed{'\n'}
               </Text>
               <Button title='Close' onPress={() => setShow(false)} />
             </View>
@@ -63,10 +66,9 @@ const BodyweightSquats = () => {
       style={styles.DESBOX}>
 
       <Text style={styles.DESBOXTXT}>
-        {'\u2022'}  Stand with feet shoulder-width apart.{'\n'}
-        {'\u2022'} Lower your hips by bending your knees and pushing your hips back, as 
-if sitting in a chair.{'\n'}
-        {'\u2022'}  Keep your chest up and back straight.{'\n'}
+        {'\u2022'} Stand with feet shoulder-width apart.{'\n'}
+        {'\u2022'} Lower your hips by bending your knees and pushing your hips back, as if sitting in a chair.{'\n'}
+        {'\u2022'} Keep your chest up and back straight.
       </Text>
 
     </View>

@@ -28,13 +28,13 @@ const MountainClimbers = () => {
     <View style={styles.Pageheading}>
       <Text
         style={styles.PageheadingText}>
-        Push-Ups: 10 Reps
+        Mountain Climbers: 20 reps total
       </Text>
     </View>
     <View style={styles.GIFBOX}>
       <FastImage
         source={{
-          uri: 'https://media.tenor.com/7RrdzMurW8IAAAAC/pushups.gif',
+          uri: 'https://i.pinimg.com/originals/18/27/be/1827be178c019b1dc6f8a8d8b4a7b0b8.gif',
           priority: FastImage.priority.normal,
         }}
         style={{ width: 350, height: 200 }}
@@ -50,7 +50,10 @@ const MountainClimbers = () => {
             <View
               style={styles.USEBOX}>
               <Text style={styles.USEBOXTXT}>
-                Quick and effective exercise to strengthen the upper body, including the chest, shoulders, and triceps, while improving overall core stability.
+                {'\u2022'}Elevated Metabolism{'\n'}
+                {'\u2022'}Increased Breathing Capacity{'\n'}
+                {'\u2022'}Adaptable for All Fitness Levels{'\n'}
+                {'\u2022'}Cardiovascular Endurance{'\n'}
               </Text>
               <Button title='Close' onPress={() => setShow(false)} />
             </View>
@@ -63,8 +66,8 @@ const MountainClimbers = () => {
       style={styles.DESBOX}>
 
       <Text style={styles.DESBOXTXT}>
-        {'\u2022'} Start in a plank position with hands shoulder-width apart.{'\n'}
-        {'\u2022'} Lower your body until your chest almost touches the ground, then push back up.
+        {'\u2022'} Start in a plank position.{'\n'}
+        {'\u2022'} Alternate bringing your knees towards your chest in a running motion.
       </Text>
 
     </View>
@@ -76,7 +79,7 @@ const MountainClimbers = () => {
         onPress={toggleTimer}
       />
     </View>
-    <Button title='Uses' onPress={() => setShow(true)} />
+    <Button title='Benefits' onPress={() => setShow(true)} />
   </View>
   )
 }

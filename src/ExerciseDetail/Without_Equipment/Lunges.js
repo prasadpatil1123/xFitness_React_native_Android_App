@@ -25,59 +25,61 @@ const Lunges = () => {
 
   return (
     <View style={styles.main}>
-      <View style={styles.Pageheading}>
-        <Text
-          style={styles.PageheadingText}>
-          Push-Ups: 10 Reps
-        </Text>
-      </View>
-      <View style={styles.GIFBOX}>
-        <FastImage
-          source={{
-            uri: 'https://media.tenor.com/7RrdzMurW8IAAAAC/pushups.gif',
-            priority: FastImage.priority.normal,
-          }}
-          style={{ width: 350, height: 200 }}
-          resizeMode={FastImage.resizeMode.contain} // Adjust the resizeMode as needed
-        />
-      </View>
-
-      <View style={{ flex: 1, justifyContent: 'center' }}>
-        {
-          show ?
-            <View
-              style={styles.CARD}>
-              <View
-                style={styles.USEBOX}>
-                <Text style={styles.USEBOXTXT}>
-                  Quick and effective exercise to strengthen the upper body, including the chest, shoulders, and triceps, while improving overall core stability.
-                </Text>
-                <Button title='Close' onPress={() => setShow(false)} />
-              </View>
-            </View>
-            : null
-        }
-      </View>
-
-      <View
-        style={styles.DESBOX}>
-
-        <Text style={styles.DESBOXTXT}>
-          {'\u2022'} Start in a plank position with hands shoulder-width apart.{'\n'}
-          {'\u2022'} Lower your body until your chest almost touches the ground, then push back up.
-        </Text>
-
-      </View>
-
-      <View style={styles.TIMERBOX}>
-        <Text style={styles.TIMERBOXTXT}>Time Remaining: {timer} seconds{'\n'}</Text>
-        <Button
-          title={isRunning ? 'Pause Timer' : 'Start Timer'}
-          onPress={toggleTimer}
-        />
-      </View>
-      <Button title='Uses' onPress={() => setShow(true)} />
+    <View style={styles.Pageheading}>
+      <Text
+        style={styles.PageheadingText}>
+        Lunges (10 reps each leg)
+      </Text>
     </View>
+    <View style={styles.GIFBOX}>
+      <FastImage
+        source={{
+          uri: 'https://wm-blog-content.s3-us-west-2.amazonaws.com/MOVEMENTS/REVERSE-LUNGES.gif',
+          priority: FastImage.priority.normal,
+        }}
+        style={{ width: 350, height: 200 }}
+        resizeMode={FastImage.resizeMode.contain} // Adjust the resizeMode as needed
+      />
+    </View>
+
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+      {
+        show ?
+          <View
+            style={styles.CARD}>
+            <View
+              style={styles.USEBOX}>
+              <Text style={styles.USEBOXTXT}>
+                {'\u2022'}Engagement of Core Muscles{'\n'}
+                {'\u2022'}Calorie Burn and Weight Management{'\n'}
+                {'\u2022'}No Equipment Needed{'\n'}
+              </Text>
+              <Button title='Close' onPress={() => setShow(false)} />
+            </View>
+          </View>
+          : null
+      }
+    </View>
+
+    <View
+      style={styles.DESBOX}>
+
+      <Text style={styles.DESBOXTXT}>
+        {'\u2022'} Step forward with one leg and lower your body until both knees are bent at 90-degree angles.{'\n'}
+        {'\u2022'} Push back to the starting position and switch legs.
+      </Text>
+
+    </View>
+
+    <View style={styles.TIMERBOX}>
+      <Text style={styles.TIMERBOXTXT}>Time Remaining: {timer} seconds{'\n'}</Text>
+      <Button
+        title={isRunning ? 'Pause Timer' : 'Start Timer'}
+        onPress={toggleTimer}
+      />
+    </View>
+    <Button title='Benefits' onPress={() => setShow(true)} />
+  </View>
   )
 }
 

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, TextInput, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 
 import WarmUp from '../../ExerciseDetail/Without_Equipment/WarmUp';
@@ -63,7 +63,7 @@ const Sunday = ({navigation}) => {
         </TouchableOpacity>
       </View>
 
-      {/* <View style={{
+      <View style={{
         flex: 1,
         backgroundColor: 'yellow',
         justifyContent: 'center',
@@ -271,7 +271,7 @@ const Sunday = ({navigation}) => {
         >
           <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Cool Down</Text>
         </TouchableOpacity>
-      </View> */}
+      </View>
 
     </View>
   </ScrollView>

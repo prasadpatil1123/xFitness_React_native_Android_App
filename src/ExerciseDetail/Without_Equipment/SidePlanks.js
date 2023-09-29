@@ -26,13 +26,13 @@ const SidePlanks = () => {
     <View style={styles.Pageheading}>
       <Text
         style={styles.PageheadingText}>
-        Push-Ups: 10 Reps
+       Side Planks: 20 seconds each side
       </Text>
     </View>
     <View style={styles.GIFBOX}>
       <FastImage
         source={{
-          uri: 'https://media.tenor.com/7RrdzMurW8IAAAAC/pushups.gif',
+          uri: 'https://i.makeagif.com/media/2-21-2014/LHF_Zd.gif',
           priority: FastImage.priority.normal,
         }}
         style={{ width: 350, height: 200 }}
@@ -48,7 +48,10 @@ const SidePlanks = () => {
             <View
               style={styles.USEBOX}>
               <Text style={styles.USEBOXTXT}>
-                Quick and effective exercise to strengthen the upper body, including the chest, shoulders, and triceps, while improving overall core stability.
+                {'\u2022'}Engages Shoulder and Arm Muscles{'\n'}
+                {'\u2022'}Enhances Hip Strength{'\n'}
+                {'\u2022'}Reduces Risk of Lower Back Pain{'\n'}
+                {'\u2022'}Improved Balance and Stability{'\n'}
               </Text>
               <Button title='Close' onPress={() => setShow(false)} />
             </View>
@@ -61,8 +64,8 @@ const SidePlanks = () => {
       style={styles.DESBOX}>
 
       <Text style={styles.DESBOXTXT}>
-        {'\u2022'} Start in a plank position with hands shoulder-width apart.{'\n'}
-        {'\u2022'} Lower your body until your chest almost touches the ground, then push back up.
+        {'\u2022'} Lie on your side with your forearm supporting your body. {'\n'}
+        {'\u2022'} Keep your body in a straight line and engage your oblique muscles.
       </Text>
 
     </View>
@@ -74,7 +77,7 @@ const SidePlanks = () => {
         onPress={toggleTimer}
       />
     </View>
-    <Button title='Uses' onPress={() => setShow(true)} />
+    <Button title='Benefits' onPress={() => setShow(true)} />
   </View>
   )
 }

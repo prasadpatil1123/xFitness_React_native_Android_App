@@ -28,13 +28,13 @@ const WarmUp = () => {
     <View style={styles.Pageheading}>
       <Text
         style={styles.PageheadingText}>
-        Push-Ups: 10 Reps
+        Warm-Up: 5-7 minutes
       </Text>
     </View>
     <View style={styles.GIFBOX}>
       <FastImage
         source={{
-          uri: 'https://media.tenor.com/7RrdzMurW8IAAAAC/pushups.gif',
+          uri: 'https://media.tenor.com/EYwxFtU_sNsAAAAC/goku-warm-up.gif',
           priority: FastImage.priority.normal,
         }}
         style={{ width: 350, height: 200 }}
@@ -49,8 +49,11 @@ const WarmUp = () => {
             style={styles.CARD}>
             <View
               style={styles.USEBOX}>
-              <Text style={styles.USEBOXTXT}>
-                Quick and effective exercise to strengthen the upper body, including the chest, shoulders, and triceps, while improving overall core stability.
+              <Text style={styles.USEBOXTXT}>             
+              {'\u2022'}Increased Blood Flow{'\n'}
+              {'\u2022'}Improved Flexibility{'\n'}
+              {'\u2022'}Enhanced Range of Motion{'\n'}
+              {'\u2022'}Mental Preparation{'\n'}
               </Text>
               <Button title='Close' onPress={() => setShow(false)} />
             </View>
@@ -63,8 +66,7 @@ const WarmUp = () => {
       style={styles.DESBOX}>
 
       <Text style={styles.DESBOXTXT}>
-        {'\u2022'} Start in a plank position with hands shoulder-width apart.{'\n'}
-        {'\u2022'} Lower your body until your chest almost touches the ground, then push back up.
+      Jog in place or perform light cardio example jumping jacks, high knees, etc. to increase your heart rate and warm up your muscles.
       </Text>
 
     </View>
@@ -76,7 +78,7 @@ const WarmUp = () => {
         onPress={toggleTimer}
       />
     </View>
-    <Button title='Uses' onPress={() => setShow(true)} />
+    <Button title='Benefits' onPress={() => setShow(true)} />
   </View>
   )
 }
