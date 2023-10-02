@@ -1,8 +1,6 @@
 import { StyleSheet, Text, View ,Button} from 'react-native'
 import React from 'react'
-import LessEqp from '../ExerciseOption/LessEqp';
-import WithDumb from '../ExerciseOption/WithDumb';
-import WithGym from '../ExerciseOption/WithGym';
+
 
 const Exercise = ({navigation}) => {
   return (

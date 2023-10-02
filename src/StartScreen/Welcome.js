@@ -1,78 +1,75 @@
-import { StyleSheet, Text, View, Button ,Image} from 'react-native'
 import React from 'react'
-import SignUp from './SignUp';
-import Login from './Login';
+import { View, Text, Image, TouchableOpacity, } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-const Welcome = ({navigation}) => {
+const Welcome = ({ navigation }) => {
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#7cb9eB', }}>
-
-            <View style={{ flex: 1, height: 250, width: 350, backgroundColor: 'yellow', justifyContent: 'center', alignItems: 'center', borderRadius: 20, margin: 8 }}>
-                <View style={{
-                    flex: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: 50, width: 300, backgroundColor: '#ffba35', borderRadius: 30, margin: 30
-                }}>
-                    <Text style={{ fontSize: 50, fontWeight: 'bold', color: 'black' }}>
-                        Fitness App
-                    </Text>
+        <SafeAreaView style={{ backgroundColor: 'black', flex: 1 }}>
+            <View>
+                <Text style={styles.headTxt}>
+                    Shape Up and Shine Bright!
+                </Text>
+                <View style={styles.ImgBox}>
+                    <Image source={require("../assets/image/FitnessAppWelcome.png")}
+                        style={{ width: 350, height: 350 }} />
                 </View>
-                <View style={{
-                    flex: 2,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    width: 400,
-                    height: 400,
-                    borderRadius: 4,
-                    margin: 8
-                }}>
-                    <Image
-                        source={require('../assets/image/FitnessAppWelcome.png')}
-                        style={{ width: 400, height: 400 }}
-                    />
+                <View>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('SignUp Screen')}
+                    >
+                        <Text style={styles.funBtn}>
+                            Sign Up
+                        </Text>
+                    </TouchableOpacity>
+                    <View>
+                        <Text style={styles.botmText}>
+                            Already have an account?{' '}
+                        </Text>
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('Login Screen')}
+                        >
+                            <Text style={styles.botmBoldText}>
+                                Log In
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={{
-                    flex: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <Button title='SignUp' onPress={() => navigation.navigate('SignUp Screen')} />
-                </View>
-
-                <View style={{
-                    flex: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <Button title='Login' onPress={() => navigation.navigate('Login Screen')} />
-                </View>
-
-                {/* <View style={{
-        flex: 1,
-        backgroundColor: 'black',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 30,
-        margin: 30,
-       
-      }}>
-        <TouchableOpacity
-          style={{
-             borderRadius: 15,
-            padding: 25,
-          }}
-          onPress={() => navigation.navigate('Gender Screen')}
-        >
-          <Text style={{ color: 'white', fontSize: 25,fontWeight:'bold' }}>bypass</Text>
-        </TouchableOpacity>
-      </View> */}
-
             </View>
-        </View>
+        </SafeAreaView>
     )
 }
 
 export default Welcome
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    headTxt: {
+        color: "white",
+        paddingTop: 50,
+        fontSize: 35,
+        justifyContent: "center",
+        textAlign: "center"
+    },
+    ImgBox: {
+        flexDirection: "row",
+        justifyContent: "center",
+        paddingTop: 90
+    },
+    funBtn: {
+        color: "black",
+        textAlign: "center",
+        borderColor: "black",
+        borderWidth: 2,
+        borderRadius: 10,
+        padding: 10,
+        fontSize: 20,
+        backgroundColor: "#fcb045",
+        margin: 10,
+        marginTop: 60
+    },
+    botmText: {
+        color: "white", margin: 2, textAlign: "center"
+    },
+    botmBoldText: {
+        textAlign: "center", color: "white", fontWeight: "bold"
+    }
+})

@@ -1,32 +1,109 @@
-import { StyleSheet, Text, View,Button } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import Sunday from './sunday/Sunday';
 
 const Week = ({navigation}) => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, backgroundColor: 'black', }}>
-      <View style={{ height: 300, width: 300, backgroundColor: '#cfcfcf', justifyContent: 'center', alignItems: 'center', borderRadius: 20 }}>
-        <Text style={{ fontSize: 25, fontWeight: 'bold',color:'black' }}> Week Plan</Text>
-        <Text> {' '} </Text>
-        <Button title='Sunday' onPress={() => navigation.navigate('Sunday')} />
-{/* 
-        <Text> {' '} </Text>
-        <Button title='Monday' onPress={() => navigation.navigate('DayScreen', { day: 'Monday' })} />
-        <Text> {' '} </Text>
-        <Button title='Tuesday' onPress={() => navigation.navigate('DayScreen', { day: 'Tuesday' })} />
-        <Text> {' '} </Text>
-        <Button title='Tuesday' onPress={() => navigation.navigate('DayScreen', { day: 'Wednesday' })} />
-        <Text> {' '} </Text>
-        <Button title='Tuesday' onPress={() => navigation.navigate('DayScreen', { day: 'Thursday' })} />
-        <Text> {' '} </Text>
-        <Button title='Tuesday' onPress={() => navigation.navigate('DayScreen', { day: 'Friday' })} />
-        <Text> {' '} </Text>
-        <Button title='Tuesday' onPress={() => navigation.navigate('DayScreen', { day: 'Suturday' })} /> */}
+    <ScrollView style={{backgroundColor:'black'}}>
+    <View style={styles.main}>
+
+      <View style={styles.heading}>
+        <Text
+          style={styles.headingTxt}>
+          Weekly Exercise
+        </Text>
       </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Sunday')}
+        >
+          <Text style={styles.BoxTxt}>Sunday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Monday')}
+        >
+          <Text style={styles.BoxTxt}>Monday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Tuesday')}
+        >
+          <Text style={styles.BoxTxt}>Tuesday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Wednesday')}
+        >
+          <Text style={styles.BoxTxt}>Wednesday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Thursday')}
+        >
+          <Text style={styles.BoxTxt}>Thursday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Friday')}
+        >
+          <Text style={styles.BoxTxt}>Friday</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.Box}>
+        <TouchableOpacity
+          style={styles.TouchBox}
+          onPress={() => navigation.navigate('Suturday')}
+        >
+          <Text style={styles.BoxTxt}>Suturday</Text>
+        </TouchableOpacity>
+      </View>
+      
+
     </View>
+  </ScrollView>
   )
 }
 
 export default Week
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  main:{ flex: 1, justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: 'black', },
+  heading:{ flex: 1, justifyContent: 'flex-start', alignItems: 'center', marginTop: 25, marginBottom: 25 },
+  headingTxt:{fontSize: 40,
+    fontWeight: 'bold',
+    color: 'white'},
+  Box:{
+    flex: 1,
+    backgroundColor: 'yellow',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+    margin: 10,
+    height: '20%',
+    width: '80%'
+  },
+  TouchBox:{
+    borderRadius: 5,
+    padding: 10,
+  },
+  BoxTxt:{ color: 'black', fontSize: 30, fontWeight: 'bold', },
+})

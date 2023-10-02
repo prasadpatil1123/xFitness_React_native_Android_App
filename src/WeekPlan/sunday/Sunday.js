@@ -1,191 +1,87 @@
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 
-import WarmUp from '../../ExerciseDetail/Without_Equipment/WarmUp';
-import PushUps from '../../ExerciseDetail/Without_Equipment/PushUps';
-
 const Sunday = ({navigation}) => {
   return (
     <ScrollView >
-    <View style={{ flex: 1, justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: 'black', }}>
+    <View style={styles.main}>
 
-      <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'center', marginTop: 25, marginBottom: 25 }}>
+      <View style={styles.heading}>
         <Text
-          style={{
-            fontSize: 40,
-            fontWeight: 'bold',
-            color: 'white'
-          }}>
+          style={styles.headingTxt}>
           Sunday Exercise
         </Text>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Warm-Up')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Warm-Up</Text>
+          <Text style={styles.BoxTxt}>Warm-Up</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Push-Ups')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Push-Ups</Text>
+          <Text style={styles.BoxTxt}>Push-Ups</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Bodyweight Squats')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Bodyweight Squats</Text>
+          <Text style={styles.BoxTxt}>Bodyweight Squats</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Plank')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Plank</Text>
+          <Text style={styles.BoxTxt}>Plank</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Lunges')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Lunges</Text>
+          <Text style={styles.BoxTxt}>Lunges</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Mountain Climbers')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Mountain Climbers</Text>
+          <Text style={styles.BoxTxt}>Mountain Climbers</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Glute Bridges')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Glute Bridges</Text>
+          <Text style={styles.BoxTxt}>Glute Bridges</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Tricep Dips')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Tricep Dips</Text>
+          <Text style={styles.BoxTxt}>Tricep Dips</Text>
         </TouchableOpacity>
       </View>
 
@@ -210,66 +106,30 @@ const Sunday = ({navigation}) => {
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('High Knees')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>High Knees</Text>
+          <Text style={styles.BoxTxt}>High Knees</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Side Planks')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Side Planks</Text>
+          <Text style={styles.BoxTxt}>Side Planks</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{
-        flex: 1,
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 10,
-        height: '20%',
-        width: '80%'
-      }}>
+      <View style={styles.Box}>
         <TouchableOpacity
-          style={{
-            borderRadius: 5,
-            padding: 10,
-          }}
+          style={styles.TouchBox}
           onPress={() => navigation.navigate('Cool Down')}
         >
-          <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', }}>Cool Down</Text>
+          <Text style={styles.BoxTxt}>Cool Down</Text>
         </TouchableOpacity>
       </View>
 
@@ -280,4 +140,25 @@ const Sunday = ({navigation}) => {
 
 export default Sunday
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  main:{ flex: 1, justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: 'black', },
+  heading:{ flex: 1, justifyContent: 'flex-start', alignItems: 'center', marginTop: 25, marginBottom: 25 },
+  headingTxt:{fontSize: 40,
+    fontWeight: 'bold',
+    color: 'white'},
+  Box:{
+    flex: 1,
+    backgroundColor: 'yellow',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+    margin: 10,
+    height: '20%',
+    width: '80%'
+  },
+  TouchBox:{
+    borderRadius: 5,
+    padding: 10,
+  },
+  BoxTxt:{ color: 'black', fontSize: 30, fontWeight: 'bold', },
+})
