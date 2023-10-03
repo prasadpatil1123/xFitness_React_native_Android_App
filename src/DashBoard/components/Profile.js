@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Gender from './GenderFile/Gender'
 
-const Home = ({navigation}) => {
+const Profile = () => {
   return (
-      <Gender navigation={navigation} />
+    <View>
+      <Text>Profile</Text>
+    </View>
   )
 }
 
-export default Home
+export default Profile
 
 const styles = StyleSheet.create({})

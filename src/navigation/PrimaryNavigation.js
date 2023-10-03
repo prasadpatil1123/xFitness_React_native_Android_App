@@ -2,6 +2,7 @@ import { StyleSheet,  } from 'react-native';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer'
 import Welcome from '../StartScreen/Welcome';
 import SignUp from '../StartScreen/SignUp';
 import Login from '../StartScreen/Login';
@@ -33,17 +34,44 @@ import Wednesday from '../WeekPlan/wednesday/Wednesday';
 import Thursday from '../WeekPlan/thursday/Thursday';
 import Friday from '../WeekPlan/friday/Friday';
 import Saturday from '../WeekPlan/saturday/Suturday';
+import About from '../DashBoard/components/About';
+import Profile from '../DashBoard/components/Profile';
+import BMI from '../DashBoard/components/BMI';
+import Share from '../DashBoard/components/Share';
+import Logout from '../DashBoard/Logout';
+
+
 
 
 const Stack = createNativeStackNavigator();
+
+const Drawer = createDrawerNavigator();
+
+const DrawerBarComponent  = () => {
+  return (
+   <Drawer.Navigator initialRouteName='Home Screen'>
+    <Drawer.Screen name='Home Screen' options={{headerShown:true}} component={Home} />
+    
+    <Drawer.Screen name='Profile Screen' component={Profile} />
+    <Drawer.Screen name='BMI Calculator' component={BMI} />
+    <Drawer.Screen name='About' component={About} />
+    <Drawer.Screen name='Share App' component={Share} />
+    <Drawer.Screen name='Logout' options={{headerShown:false}} component={Logout} />
+   </Drawer.Navigator>
+  )
+}
+
 const PrimaryNavigation = () => {
   return (
     <NavigationContainer>
     <Stack.Navigator initialRouteName='Welcome'>
-      <Stack.Screen name='Welcome Screen' component={Welcome} />
-      <Stack.Screen name='SignUp Screen' component={SignUp} />
-      <Stack.Screen name='Login Screen' component={Login} />
-      <Stack.Screen name='Home Screen' component={Home} />
+      <Stack.Screen name='Welcome Screen' options={{headerShown:false}} component={Welcome} />
+      <Stack.Screen name='SignUp Screen' options={{headerShown:false}} component={SignUp} />
+      <Stack.Screen name='Login Screen' options={{headerShown:false}} component={Login} />
+
+      {/* <Stack.Screen name='Slide' component={DrawerBarComponent} /> */}
+      
+      <Stack.Screen name='Drawer Screen' options={{headerShown:false}} component={DrawerBarComponent} />
       <Stack.Screen name='Gender Screen' component={Gender} />
       <Stack.Screen name='Male Screen' component={Male} />
       <Stack.Screen name='Female Screen' component={Female} />

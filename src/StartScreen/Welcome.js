@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, TouchableOpacity, } from 'react-native'
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Welcome = ({ navigation }) => {
@@ -10,8 +10,8 @@ const Welcome = ({ navigation }) => {
                     Shape Up and Shine Bright!
                 </Text>
                 <View style={styles.ImgBox}>
-                    <Image source={require("../assets/image/FitnessAppWelcome.png")}
-                        style={{ width: 350, height: 350 }} />
+                    <Image source={require("../assets/image/FitnessAppLogin.png")}
+                        style={{ width: 350, height: 350, borderRadius: 150 }} />
                 </View>
                 <View>
                     <TouchableOpacity
@@ -47,7 +47,8 @@ const styles = StyleSheet.create({
         paddingTop: 50,
         fontSize: 35,
         justifyContent: "center",
-        textAlign: "center"
+        textAlign: "center",
+        fontWeight: 'bold'
     },
     ImgBox: {
         flexDirection: "row",
@@ -61,7 +62,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 10,
         padding: 10,
-        fontSize: 20,
+        fontSize: 25,
+        fontWeight:'bold',
         backgroundColor: "#fcb045",
         margin: 10,
         marginTop: 60
@@ -70,6 +72,6 @@ const styles = StyleSheet.create({
         color: "white", margin: 2, textAlign: "center"
     },
     botmBoldText: {
-        textAlign: "center", color: "white", fontWeight: "bold"
+        textAlign: "center", color: "white", fontWeight: "bold", fontSize:20
     }
 })

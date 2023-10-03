@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native'
 import React, { useState, } from 'react'
 import Login from './Login';
 
@@ -18,8 +18,8 @@ const SignUp = ({ navigation }) => {
 
   return (
     <View style={{ backgroundColor: 'black', flex: 1 }}>
-      <View>
-        <Image source={require("../assets/image/dumb1.jpeg")}
+      <View style={styles.NoLogBox}>
+        <Image source={require("../assets/image/FitnessAppLogin.png")}
           style={styles.ImgBox}
         />
       </View>
@@ -88,12 +88,25 @@ const SignUp = ({ navigation }) => {
 export default SignUp
 
 const styles = StyleSheet.create({
-  ImgBox: { width: 230, height: 150, justifyContent: 'center', marginLeft: 90 },
-  SignBox: { marginTop: 50, flex: 1, backgroundColor: 'white', borderTopLeftRadius: 50, borderTopRightRadius: 50 },
-  TxtQ: { marginTop: 30, marginLeft: 40, fontSize: 18, color: 'black' },
-  TxtA: { marginLeft: 35, fontSize: 17, color: 'black', backgroundColor: '#e4e3e3', borderRadius: 15, marginRight: 35 },
-  SignUpButton:{backgroundColor: 'gold', borderRadius: 15, marginTop: 15, marginLeft: 35, marginRight: 35, padding: 15, color: 'black'},
-  SignUpButtonTxt:{ textAlign: 'center', fontSize: 17, fontWeight: 'bold',},
+  ImgBox: { width: 150, height: 150, justifyContent: 'center', marginTop: 0, marginLeft: 25,marginRight:25,borderRadius:50 },
+  NoLogBox:{flex:1,alignItems:'center',justifyContent:'center'},
+  SignBox: { flex: 3, backgroundColor: '#fcb045', borderRadius:50 },
+  TxtQ: { marginTop: 25, 
+    marginLeft: 40, 
+    fontSize: 18, 
+    color: 'black',
+    fontWeight:'bold',
+    paddingLeft:15,
+    paddingBottom:5 },
+  TxtA: {  marginLeft: 35,
+    fontSize: 17, 
+    color: 'black', 
+    backgroundColor: '#e4e3e3', 
+    marginRight: 35,
+     borderRadius: 35,
+     paddingLeft:25 },
+  SignUpButton:{backgroundColor: 'black', borderRadius: 15, marginTop: 15, marginLeft: 35, marginRight: 35, padding: 15, },
+  SignUpButtonTxt:{ textAlign: 'center', fontSize: 17, fontWeight: 'bold',color:'white'},
   ORtxt:{textAlign: 'center', paddingTop: 19, paddingBottom: 19, color: 'black', fontSize: 18, fontWeight: 'bold'},
   SocialBox: {
     flexDirection: 'row', justifyContent: 'space-evenly'
@@ -105,6 +118,6 @@ const styles = StyleSheet.create({
     color: 'black', marginTop: 20, textAlign: 'center'
   },
   RemButton: {
-    textAlign: 'center', color: 'blue'
+    textAlign: 'center', color: 'blue',fontSize:20,fontWeight:'bold'
   },
 })

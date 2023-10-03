@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import Male from './Male'
 import Female from './Female'
@@ -9,31 +9,42 @@ const Gender = ({ navigation }) => {
     navigation.navigate('Exercise Screen', { gender: selectedGender })
   }
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'black',marginTop:250,marginBottom:250,borderRadius:60,marginLeft:30,marginRight:30 }}>
 
-      <View style={{ height: 150, width: 300, backgroundColor: '#cfcfcf', justifyContent: 'center', alignItems: 'center', borderRadius: 20, }}>
+      
 
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
-          <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'black' }}>
+          <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}>
             Select Gender :
           </Text>
         </View>
 
-        <View style={{ flex: 1, justifyContent: 'space-evenly', alignItems: '', flexDirection:'row'}}>
-          <Button title='Male' onPress={() => setSelectedGender('Male Screen')} />
-            <Text>{' '}</Text>
-          <Button title='Female' onPress={() => setSelectedGender('Female Screen')} />
+        <View style={{flex:1,flexDirection:'row',justifyContent:'space-evenly',alignItems:'center',}}>
+          <TouchableOpacity
+            onPress={() => setSelectedGender('Male Screen')}
+          >
+            <View
+                    style={styles.funBtn}
+                >
+                    <Text style={styles.textDesign}>Male</Text>
+                </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => setSelectedGender('Female Screen')}
+          >
+             <View
+                    style={styles.funBtn}
+                >
+                    <Text style={styles.textDesign}>Female</Text>
+                </View>
+          </TouchableOpacity>
         </View>
 
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
           <Button title="Next" onPress={handleNext} />
         </View>
-
-
-
-        <Text>  {' '}  </Text>
-
-      </View>
+      
 
     </View>
   )
@@ -41,4 +52,20 @@ const Gender = ({ navigation }) => {
 
 export default Gender
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  funBtn: {
+    borderWidth: 10,
+    height: 100,
+    width: 100,
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius: 25,
+    backgroundColor: 'white',
+    flexDirection: 'row'
+},
+  textDesign: {
+    color: 'black',
+    fontSize: 20,   
+}
+})

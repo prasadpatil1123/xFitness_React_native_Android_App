@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState,} from 'react'
 
 
 const Login = ({ navigation }) => {
@@ -9,7 +9,7 @@ const Login = ({ navigation }) => {
 
   const handleLogin = () => {
     if (email && password) {
-      navigation.navigate('Home Screen')
+      navigation.navigate('Drawer Screen')
     } else {
       alert('Please fill in both email and password fields.');
     }
@@ -17,8 +17,8 @@ const Login = ({ navigation }) => {
 
   return (
     <View style={{ backgroundColor: 'black', flex: 1 }}>
-      <View>
-        <Image source={require("../assets/image/dumb1.jpeg")}
+      <View style={styles.NoLogBox}>
+        <Image source={require("../assets/image/FitnessAppLogin.png")}
           style={styles.ImgBox}
         />
       </View>
@@ -85,24 +85,37 @@ const Login = ({ navigation }) => {
 export default Login
 
 const styles = StyleSheet.create({
-  ImgBox: { width: 350, height: 250, justifyContent: 'center', marginTop: 0, marginLeft: 25 },
+  ImgBox: { width: 150, height: 150, justifyContent: 'center', marginTop: 0, marginLeft: 25,marginRight:25,borderRadius:50 },
+  NoLogBox:{flex:1,alignItems:'center',justifyContent:'center'},
   LogBox: {
-    flex: 1, backgroundColor: 'white', borderTopLeftRadius: 50, borderTopRightRadius: 50
+    flex: 3, backgroundColor: '#fcb045', borderRadius:50
   },
   TxtQ: {
-    marginTop: 30, marginLeft: 40, fontSize: 18, color: 'black'
+    marginTop: 30, 
+    marginLeft: 40, 
+    fontSize: 18, 
+    color: 'black',
+    fontWeight:'bold',
+    paddingLeft:15,
+    paddingBottom:10
   },
   TxtA: {
-    marginLeft: 35, fontSize: 17, color: 'black', backgroundColor: '#e4e3e3', marginRight: 35, borderRadius: 35,
+    marginLeft: 35,
+     fontSize: 17, 
+     color: 'black', 
+     backgroundColor: '#e4e3e3', 
+     marginRight: 35,
+      borderRadius: 35,
+      paddingLeft:25
   },
   forgotText: {
     color: 'black', marginTop: 10, textAlign: 'right', marginRight: 37,
   },
   LoginButton: {
-    backgroundColor: 'gold', borderRadius: 15, marginTop: 15, marginLeft: 35, marginRight: 35, padding: 15, color: 'black'
+    backgroundColor: 'black', borderRadius: 15, marginTop: 15, marginLeft: 35, marginRight: 35, padding: 15, 
   },
   LoginButtonTxt: {
-    textAlign: 'center', fontSize: 17, fontWeight: 'bold',
+    textAlign: 'center', fontSize: 17, fontWeight: 'bold',color:'white'
   },
   ORtxt: {
     textAlign: 'center', paddingTop: 19, paddingBottom: 19, color: 'black', fontSize: 18, fontWeight: 'bold'
@@ -114,9 +127,9 @@ const styles = StyleSheet.create({
     padding: 5, backgroundColor: '#e4e3e3', borderRadius: 15
   },
   RemTxt: {
-    color: 'black', marginTop: 20, textAlign: 'center'
+    color: 'black', marginTop: 20, textAlign: 'center',
   },
   RemButton: {
-    textAlign: 'center', color: 'blue'
+    textAlign: 'center', color: 'blue',fontSize:20,fontWeight:'bold'
   },
 })

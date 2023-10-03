@@ -48,6 +48,8 @@ react {
     //
     //   The list of flags to pass to the Hermes compiler. By default is "-O", "-output-source-map"
     // hermesFlags = ["-O", "-output-source-map"]
+
+
 }
 
 /**
@@ -101,6 +103,9 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    project.ext.react = [
+        enableHermes: true  // Enable Hermes
+    ]
 }
 
 dependencies {
