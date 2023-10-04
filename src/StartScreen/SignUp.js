@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native'
 import React, { useState, } from 'react'
-import Login from './Login';
+
 
 const SignUp = ({ navigation }) => {
 
@@ -10,7 +10,7 @@ const SignUp = ({ navigation }) => {
 
   const handleSignUp = () => {
     if (name && email && password) {
-      navigation.navigate('Login Screen')
+      navigation.navigate('Login Screen',{username:name})
     } else {
       alert('Please fill in all fields.');
     }

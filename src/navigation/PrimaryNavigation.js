@@ -47,15 +47,16 @@ const Stack = createNativeStackNavigator();
 
 const Drawer = createDrawerNavigator();
 
-const DrawerBarComponent  = () => {
+const DrawerBarComponent  = ({route}) => {
+  const {username} =route.params;
   return (
-   <Drawer.Navigator initialRouteName='Home Screen'>
-    <Drawer.Screen name='Home Screen' options={{headerShown:true}} component={Home} />
+   <Drawer.Navigator initialRouteName='Home '>
+    <Drawer.Screen name='Home ' options={{headerShown:true}} component={Home} />
     
-    <Drawer.Screen name='Profile Screen' component={Profile} />
+    <Drawer.Screen name='Profile Screen' options={{title:`${username}`}} component={Profile} />
     <Drawer.Screen name='BMI Calculator' component={BMI} />
     <Drawer.Screen name='About' component={About} />
-    <Drawer.Screen name='Share App' component={Share} />
+    <Drawer.Screen name='Share' component={Share} />
     <Drawer.Screen name='Logout' options={{headerShown:false}} component={Logout} />
    </Drawer.Navigator>
   )

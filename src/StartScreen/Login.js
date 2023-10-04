@@ -2,14 +2,14 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'reac
 import React, { useState,} from 'react'
 
 
-const Login = ({ navigation }) => {
+const Login = ({ navigation,route }) => {
 
   const [email, setEmail] = useState('');
   const [password, setpassword] = useState('');
 
   const handleLogin = () => {
     if (email && password) {
-      navigation.navigate('Drawer Screen')
+      navigation.navigate('Drawer Screen', {username:route.params.username})
     } else {
       alert('Please fill in both email and password fields.');
     }

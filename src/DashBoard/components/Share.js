@@ -1,28 +1,29 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Share } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Share as RNShare } from 'react-native';
 
-const Share = ({contentToShare }) => {
+const ShareComponent = ({ contentToShare }) => {
   const handleShare = async () => {
     try {
-        await Share.share({
-            message: contentToShare,
-        });
+      await RNShare.share({
+        message: contentToShare,
+      });
     } catch (error) {
-        console.error('Error sharing content:', error.message);
+      console.error('Error sharing content:', error.message);
     }
-};
+  };
+
   return (
     <View style={styles.container}>
-    <Text style={styles.title}>Share Your Achievement</Text>
-    <TouchableOpacity style={styles.shareButton} onPress={handleShare}>
+      <Text style={styles.title}>Share Your Achievement</Text>
+      <TouchableOpacity style={styles.shareButton} onPress={handleShare}>
         <Text style={styles.shareButtonText}>Share Now</Text>
-    </TouchableOpacity>
-</View>
-  )
-}
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 export default () => (
-  <Share contentToShare="I just completed an intense workout! 💪 #FitnessApp" />
+  <ShareComponent contentToShare="I just completed an intense workout! 💪 #FitnessApp" />
 );
 
 const styles = StyleSheet.create({
@@ -31,20 +32,20 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
-},
-title: {
+  },
+  title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-},
-shareButton: {
+  },
+  shareButton: {
     backgroundColor: '#3498db',
     padding: 10,
     borderRadius: 5,
-},
-shareButtonText: {
+  },
+  shareButtonText: {
     color: '#fff',
     fontSize: 18,
     fontWeight: 'bold',
-},
-})
+  },
+});
