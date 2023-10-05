@@ -8,11 +8,11 @@ const LessEqp = ({navigation}) => {
     <View style={{ height: 300, width: 300, backgroundColor: '#cfcfcf', justifyContent: 'center', alignItems: 'center', borderRadius: 20 }}>
       <Text style={{ fontSize: 25, fontWeight: 'bold' }}> Without Equipment </Text>
       <Text> {' '} </Text>
-      <Button title='Biginner' onPress={() => navigation.navigate('Week Plan')} />
+      <Button title='Biginner' onPress={() => navigation.navigate('Week Screen')} />
       <Text> {' '} </Text>
-      <Button title='Intermediate' onPress={() => navigation.navigate('Week Plan')} />
+      <Button title='Intermediate' onPress={() => navigation.navigate('Week Screen')} />
       <Text> {' '} </Text>
-      <Button title='Advanced' onPress={() => navigation.navigate('Week Plan')} />
+      <Button title='Advanced' onPress={() => navigation.navigate('Week Screen')} />
     </View>
   </View>
   )

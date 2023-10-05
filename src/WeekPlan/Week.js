@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
-import Sunday from './sunday/Sunday';
+// import Sunday from './sunday/Sunday';
 
-const Week = ({navigation}) => {
+const Week = (props) => {
   return (
     <ScrollView style={{backgroundColor:'black'}}>
     <View style={styles.main}>
@@ -17,7 +17,7 @@ const Week = ({navigation}) => {
       <View style={styles.Box}>
         <TouchableOpacity
           style={styles.TouchBox}
-          onPress={() => navigation.navigate('Sunday')}
+          onPress={() => props.navigation.navigate('Sunday')}
         >
           <Text style={styles.BoxTxt}>Sunday</Text>
         </TouchableOpacity>
@@ -26,7 +26,7 @@ const Week = ({navigation}) => {
       <View style={styles.Box}>
         <TouchableOpacity
           style={styles.TouchBox}
-          onPress={() => navigation.navigate('Monday')}
+          onPress={() => props.navigation.navigate('Monday')}
         >
           <Text style={styles.BoxTxt}>Monday</Text>
         </TouchableOpacity>
