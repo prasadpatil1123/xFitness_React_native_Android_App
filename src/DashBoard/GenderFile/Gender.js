@@ -5,12 +5,12 @@ import React, { useState } from 'react'
 const Gender = ({ navigation }) => {
   const [selectedGender, setSelectedGender] = useState('');
   const handleNext = () => {
-    navigation.navigate('Exercise Screen', { gender: selectedGender })
+    // navigation.navigate('Exercise', { gender: selectedGender })
+    const nextScreen = selectedGender === 'Male Screen' ? 'Male' : 'Female';
+    navigation.navigate(nextScreen, { gender: selectedGender });
   }
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'black',marginTop:250,marginBottom:250,borderRadius:60,marginLeft:30,marginRight:30 }}>
-
-      
 
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
           <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}>

@@ -48,10 +48,10 @@ const PrimaryNavigation = (props) => {
         <Stack.Screen name='SignUp Screen' options={{ headerShown: false }} component={SignUp} />
         <Stack.Screen name='Login Screen' options={{ headerShown: false }} component={Login} />
         <Stack.Screen name='Drawer Screen' options={{ headerShown: false }} component={DrawerBarComponent} />
-        <Stack.Screen name='Gender Screen' component={Gender} />
-        <Stack.Screen name='Male Screen' component={Male} />
-        <Stack.Screen name='Female Screen' component={Female} />
-        <Stack.Screen name='Exercise Screen' component={Exercise} />
+        <Stack.Screen name='Gender' component={Gender} />
+        <Stack.Screen name='Male' component={Male} />
+        <Stack.Screen name='Female' component={Female} />
+        <Stack.Screen name='Exercise' component={Exercise} />
         <Stack.Screen name='Without Equipment' component={LessEqp} />
         <Stack.Screen name='With Dumbbell' component={WithDumb} />
         <Stack.Screen name='With Gym' component={WithGym} />

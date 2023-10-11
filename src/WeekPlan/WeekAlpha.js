@@ -10,7 +10,7 @@ const DayBox = ({ title, onPress }) => (
   </View>
 );
 
-const Week = ({ navigation }) => {
+const WeekAlpha = ({ navigation }) => {
 
   const weeks = [
     { title: 'Sunday', navigateTo: 'Sunday' },
@@ -43,7 +43,7 @@ const Week = ({ navigation }) => {
   )
 }
 
-export default Week
+export default WeekAlpha
 
 const styles = StyleSheet.create({
   main: { flex: 1, justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: 'black', },

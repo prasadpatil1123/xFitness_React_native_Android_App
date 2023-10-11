@@ -9,20 +9,12 @@ const ExerciseBox = ({ title, onPress }) => (
   </View>
 );
 
-const Saturday = ({navigation}) => {
+const SundayAlpha = ({navigation}) => {
   const exercises = [
     { title: 'Warm-Up', navigateTo: 'Warm-Up' },
 
-    { title: 'Push-Ups', navigateTo: 'Push-Ups' },
-    { title: 'Bodyweight Squats', navigateTo: 'Bodyweight Squats' },
-    { title: 'Plank', navigateTo: 'Plank' },
-    { title: 'Lunges', navigateTo: 'Lunges' },
-    { title: 'Mountain Climbers', navigateTo: 'Mountain Climbers' },
-    { title: 'Glute Bridges', navigateTo: 'Glute Bridges' },
-    { title: 'Tricep Dips', navigateTo: 'Tricep Dips' },
-    { title: 'Supermans', navigateTo: 'Supermans' },
-    { title: 'High Knees', navigateTo: 'High Knees' },
-    { title: 'Side Planks', navigateTo: 'Side Planks' },
+    { title: 'Wide Push-Ups', navigateTo: 'Wide Push-Ups' },
+ 
 
 
     // Add other exercises here
@@ -33,7 +25,7 @@ const Saturday = ({navigation}) => {
     <ScrollView>
       <View style={styles.main}>
         <View style={styles.heading}>
-          <Text style={styles.headingTxt}>Saturday Exercise</Text>
+          <Text style={styles.headingTxt}>Sunday Exercise</Text>
         </View>
 
         {exercises.map((exercise, index) => (
@@ -68,5 +60,5 @@ const styles = StyleSheet.create({
   CARD: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(50,50,50,0.5)', alignItems: 'center' },
 });
 
-export default Saturday
+export default SundayAlpha
 
