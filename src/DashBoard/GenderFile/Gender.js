@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
-import Male from './Male'
-import Female from './Female'
+
 
 const Gender = ({ navigation }) => {
   const [selectedGender, setSelectedGender] = useState('');

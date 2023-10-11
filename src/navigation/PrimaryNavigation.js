@@ -19,7 +19,9 @@ import Profile from '../DashBoard/components/Profile';
 import BMI from '../DashBoard/components/BMI';
 import Share from '../DashBoard/components/Share';
 import Logout from '../DashBoard/Logout';
-import WeekNavigator from './WeekNavigation';
+import WeekNavigator from './WeekNavigator';
+import WeekNavigatorAlpha from './WeekNavigatorAlpha';
+import WeekNavigatorBeta from './WeekNavigatorBeta';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -54,6 +56,8 @@ const PrimaryNavigation = (props) => {
         <Stack.Screen name='With Dumbbell' component={WithDumb} />
         <Stack.Screen name='With Gym' component={WithGym} />
         <Stack.Screen name='Week Screen' options={{ headerShown: false }} component={WeekNavigator} />
+        <Stack.Screen name='Week Screen Alpha' options={{ headerShown: false }} component={WeekNavigatorAlpha} />
+        <Stack.Screen name='Week Screen Beta' options={{ headerShown: false }} component={WeekNavigatorBeta} />
       </Stack.Navigator>
     </NavigationContainer>
   )

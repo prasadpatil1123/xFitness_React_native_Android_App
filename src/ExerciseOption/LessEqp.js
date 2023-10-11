@@ -10,9 +10,9 @@ const LessEqp = ({navigation}) => {
       <Text> {' '} </Text>
       <Button title='Biginner' onPress={() => navigation.navigate('Week Screen')} />
       <Text> {' '} </Text>
-      <Button title='Intermediate' onPress={() => navigation.navigate('Week Screen')} />
+      <Button title='Intermediate' onPress={() => navigation.navigate('Week Screen Alpha')} />
       <Text> {' '} </Text>
-      <Button title='Advanced' onPress={() => navigation.navigate('Week Screen')} />
+      <Button title='Advanced' onPress={() => navigation.navigate('Week Screen Beta')} />
     </View>
   </View>
   )

@@ -31,53 +31,6 @@ const Week = (props) => {
           <Text style={styles.BoxTxt}>Monday</Text>
         </TouchableOpacity>
       </View>
-
-      <View style={styles.Box}>
-        <TouchableOpacity
-          style={styles.TouchBox}
-          onPress={() => navigation.navigate('Tuesday')}
-        >
-          <Text style={styles.BoxTxt}>Tuesday</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.Box}>
-        <TouchableOpacity
-          style={styles.TouchBox}
-          onPress={() => navigation.navigate('Wednesday')}
-        >
-          <Text style={styles.BoxTxt}>Wednesday</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.Box}>
-        <TouchableOpacity
-          style={styles.TouchBox}
-          onPress={() => navigation.navigate('Thursday')}
-        >
-          <Text style={styles.BoxTxt}>Thursday</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.Box}>
-        <TouchableOpacity
-          style={styles.TouchBox}
-          onPress={() => navigation.navigate('Friday')}
-        >
-          <Text style={styles.BoxTxt}>Friday</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.Box}>
-        <TouchableOpacity
-          style={styles.TouchBox}
-          onPress={() => navigation.navigate('Suturday')}
-        >
-          <Text style={styles.BoxTxt}>Suturday</Text>
-        </TouchableOpacity>
-      </View>
-      
-
     </View>
   </ScrollView>
   )
