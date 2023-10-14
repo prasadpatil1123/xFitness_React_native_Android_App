@@ -1,7 +1,22 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
-[Fitness App V_0_2.pdf](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/files/12903879/Fitness.App.V_0_2.pdf)
-
+![1](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/3af62334-1ccc-46a6-b57c-ad482498cd4f)
+![2](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/d81456e9-c070-47a4-90e3-2d86ce4b3f59)
+![3](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/76a2585a-99be-43a8-969e-b3da13cf010d)
+![4](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/0be88b40-aa9e-40e2-ba90-43e7afa59adc)
+![5](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/180eba05-9ff6-486a-9085-f901ed176837)
+![6](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/ad9e64bd-9cb7-447d-ae34-aabfa62493de)
+![7](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/2177001f-2f28-4185-8be5-90ead6162f7e)
+![8](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/0583164b-629a-4048-a861-5e559abafc2f)
+![9](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/96d40e37-00b6-48ca-9ec2-eed6c607735e)
+![10](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/64fa7fc6-48c4-42bc-bb70-ab25fb1a0f5b)
+![11](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/995d8496-c18e-472c-928c-74e887888a5a)
+![12](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/cf05d72d-7a6f-4e4b-8e01-d10d31872a13)
+![13](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/9cc12281-fb4c-4ef5-8569-6eac80951541)
+![14](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/b59c482f-922a-4b13-bfe7-340043d0877a)
+![15](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/b33e6e69-1696-4509-aa4d-ca269f62c14b)
+![16](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/92df679b-540f-4ee9-89b4-23f92bb9a904)
+![17](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/a8fe3e7d-a62f-41fe-9205-64a941a13f51)
+![18](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/assets/122286888/492d8d0a-6120-4f94-9837-77ee5883e6b8)
 
 # Getting Started
 
