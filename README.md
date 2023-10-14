@@ -1,5 +1,8 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+[Fitness App V_0_2.pdf](https://github.com/prasadpatil1123/xFitness_React_native_Android_App/files/12903879/Fitness.App.V_0_2.pdf)
+
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
